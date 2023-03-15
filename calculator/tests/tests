@@ -1,0 +1,31 @@
+# Test addition
+result=$(./calculator add 4 7)
+if [[ $result -eq 11 ]]; then
+    echo "Addition test passed"
+else
+    echo "Addition test failed"
+fi
+
+# Test subtraction
+result=$(./calculator subtract 94 36)
+if [[ $result -eq 58 ]]; then
+    echo "Subtraction test passed"
+else
+    echo "Subtraction test failed"
+fi
+
+# Test multiplication
+result=$(./calculator multiply 7 6)
+if [[ $result -eq 42 ]]; then
+    echo "Multiplication test passed"
+else
+    echo "Multiplication test failed"
+fi
+
+# Test division
+result=$(./calculator divide 39 13)
+if [[ $result -eq 3 ]]; then
+    echo "Division test passed"
+else
+    echo "Division test failed"
+fi
